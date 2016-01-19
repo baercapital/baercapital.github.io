@@ -4617,3 +4617,50 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
   background-color: #968859;
   border-color: #968859 !important
 }
+
+/* CSS for Profiles */
+
+.cropcircle{
+  width: 400px;
+  height: 400px;
+  border-radius: 66%;
+  background: #eee no-repeat center;
+  background-size: cover;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.cropcircle_right{
+  width: 400px;
+  height: 400px;
+  border-radius: 66%;
+  background: #eee no-repeat right;
+  background-size: cover;
+  margin: auto;
+  margin-top: 25px;
+}
+
+#aabraham {
+  background-image: url(../img/portfolio/aabraham.jpg);
+}
+
+#asama {
+  background-image: url(../img/portfolio/asama.jpg);
+}
+
+#bsingh {
+  background-image: url(../img/portfolio/bsingh.jpg); 
+}
+
+#dghosh {
+  background-image: url(../img/portfolio/dghosh.jpg);
+}
+
+#mbaer {
+  background-image: url(../img/portfolio/mbaer.jpg);
+}
+
+#rthomas {
+  background-image: url(../img/portfolio/rthomas.jpg);
+}
+

@@ -2,8 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 
 <head>
-
-    <meta charset="utf-8">
+<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
@@ -14,13 +13,13 @@
     <meta name="keywords" content="baer,capital,partners,finance,private,equity,services,india,hedge,fund,growth,innovation,brij,singh,michael,alok,sama">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-    <title>Contact | Baer Capital Partners</title><!-- Your page/site title -->
+    <title>Alok Sama | Baer Capital Partners</title><!-- Your page/site title -->
 
     <!-- Load Our CSS - Do not alter the load order -->
     <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap Core - ALways load first -->
     <link href="css/animate.css" rel="stylesheet"><!-- Animatations -->
     <link href="css/icomoon.css" rel="stylesheet"><!-- Icon Font -->
-    <link href="css/style.css" rel="stylesheet"><!-- Main stylesheet -->
+    <link href="css/style.css" rel="stylesheet"><!-- Main theme stylesheet -->
 
     <!-- Load our fonts form Google -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
@@ -61,91 +60,7 @@
 
 </head>
 
-<body id="contact">
-
-    <!-- Initialize Google Maps with api parameters -->
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script><!-- Our google api script -->
-    <script type="text/javascript">
-    var tblock = function (e) {
-    if (e.touches.length > 1) {
-        e.preventDefault()
-    }
-
-    return false;
-}
-document.body.addEventListener("touchmove", tblock, true);
-    (function() {
-        "use strict";
-        function initialize() {
-
-            var mapOptions = {
-                center: new google.maps.LatLng(35.214761, 55.281167),
-                zoom: 4,
-                zoomControl: false,
-                scaleControle: false,
-                scrollwheel: false,
-                disableDoubleClickZoom: true,
-                draggable: true,
-                disableDefaultUI: true
-            };
-
-            var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-
-            var image = 'img/pointer.png';
-            var marker_dubai = new google.maps.Marker({
-                position: new google.maps.LatLng(25.214761, 55.281167),
-                clickable: false,
-                title: "Our Dubai Location",
-                icon: image
-            });
-
-            var marker_delhi = new google.maps.Marker({
-                position: new google.maps.LatLng(28.482988, 77.107089),
-                clickable: false,
-                title: "Our Delhi Location",
-                icon: image
-            })
-
-            var marker_zurich = new google.maps.Marker({
-                position: new google.maps.LatLng(47.361815, 8.548140),
-                clickable: false,
-                title: "Our Zurich Location",
-                icon: image
-            })
-
-            marker_dubai.setMap(map);
-            marker_delhi.setMap(map);
-            marker_zurich.setMap(map);
-
-            var styles = [{
-                stylers: [{
-                    saturation: -100
-                }]
-            }, {
-                featureType: "road",
-                elementType: "geometry",
-                stylers: [{
-                    lightness: 100
-                }, {
-                    visibility: "simplified"
-                }]
-            }, {
-                featureType: "road",
-                elementType: "labels",
-                stylers: [{
-                    visibility: "off"
-                }]
-            }];
-
-
-
-            map.setOptions({
-                styles: styles
-            });
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    })();
-    </script>
+<body id="home">
 
     <!-- Our page loader -->
     <div class="loadstack">
@@ -171,10 +86,10 @@ document.body.addEventListener("touchmove", tblock, true);
                     <!-- Logo for desktops/large screens -->
                     <div id="menumodalLabel" class="modal-title">
                         <div class="modallogo">
-                            <img src="img/logo.png" alt="Baer Capital Logo">
+                            <img src="img/logo.png" alt="Baer Capital Partners Logo">
                         </div>
                         <div class="modaltagline">
-                            <h3>Baer Capital Partners | Innovation, Integrity, Transparency </h3>
+                            <h3>Baer Capital Partners | Integrity, Innovation, Transparency </h3>
                         </div>
                     </div>
                 </div>
@@ -184,9 +99,9 @@ document.body.addEventListener("touchmove", tblock, true);
                             <div class="menubg" style="background-image: url('img/menu/index.jpg')"></div>
                             <a href="index.html" title="Index">Home<span>What we do at Baer Capital</span></a>
                         </li>
-                        <li class="col-md-6 col-sm-6 two">
-                            <div class="menubg" style="background-image: url('img/menu/index.jpg')"></div>
-                            <a href="about.html" title="About">Team<span>Who are we?</span></a>
+                        <li class="col-md-6 col-sm-6 four">
+                            <div class="menubg" style="background-image: url('img/menu/contact.jpg')"></div>
+                            <a href="contact.html" title="Contact">Contact<span>Contact us for information or details</span></a>
                         </li>
                     </ul>
                 </div>
@@ -202,7 +117,7 @@ document.body.addEventListener("touchmove", tblock, true);
 
     <!-- ============================ Social menu, (modal window) ============================ -->
 
-     <div id="socialmodal" class="modal fade" tabindex="-1" role="dialog" aria-label="socialmodalLabel" aria-hidden="true">
+    <div id="socialmodal" class="modal fade" tabindex="-1" role="dialog" aria-label="socialmodalLabel" aria-hidden="true">
 
         <!-- Menu Trigger -->
         <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
@@ -248,8 +163,7 @@ document.body.addEventListener("touchmove", tblock, true);
         <nav id="bullets" class="cover">
             <ul>
                 <li class="current-page-item"><a href="#wrapper"></a></li>
-                <li><a href="#cform"></a></li>
-                <li><a href="#three"></a></li>
+                <li><a href="#two"></a></li>
             </ul>
         </nav>
 
@@ -268,45 +182,60 @@ document.body.addEventListener("touchmove", tblock, true);
     <!-- Always keep all page content wrapped in this div, with id="wrapper" and class="page-content" -->
     <div id="wrapper" class="page-content">
 
-        <!-- ================================ Section ================================= -->
-
-        <section class="map noMargin" id="map">
-          <div id="map-canvas"></div>
-        </section>
-
-        <!-- ============================ Section End ============================== -->
-
         <!-- ============================ Section Start ============================ -->
 
-        <section id="cform" class="container-fluid red-lt">
-            <div class="row">
-                <div class="col-lg-12 textpadding">
-                    <h3><span class="icon-location"></span> Baer Capital Partners, PO Box 506508</h3>
-                    <a href="tel:+97144019235"><h3><span class="icon-phone"></span> +9714 401 9235</h3></a>
-                    <a href="mailto:info@baercapital.com"><h3><span class="icon-bubble2"></span> info@baercapital.com</h3></a>
-                    
-                </div>
-                
-            </div>
-        </section>
-
-        <!-- ============================ Section End ============================== -->
-
-        <!-- ============================ Section Start ============================ -->
-
-        <section id="three" class="container padding wow fadeInUp" data-wow-delay="0.6s">
+        <section class="container-fluid titlebar">
             <div class="row">
                 <div class="col-xs-12">
-                    <h3>Contact Us Today</h3>
+                    <h3 class="pull-left">About us</h3>
+                    <h3 class="pull-right"><a href="about.html" class="back" title="Back">Back <span class="icon-undo2"></span></a></h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section End ============================== -->
+        <!-- ============================ Section Start ============================ -->
+
+        <div class="container wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="asama" class="cropcircle"></div>
+                    </div>
+
+                </div>
+        </div>
+
+        <section class="container wow fadeInUp" data-wow-delay="0.5s">
+            <div class="row ">
+                <div class="col-xs-12 centertext">
+                    <hr class="mini central">
+                    <h1>Alok Sama</h1>
+                    <hr class="title">
+                </div>
+            </div>
+        </section>
+        <!-- ============================ Section End ============================== -->
+
+        <!-- ============================ Section Start ============================ -->
+
+        <section id="two" class="container-fluid white">
+            <div class="row">
+                <div class="col-md-8 textpadding">
+                    <h3>Current role</h3>                    
                     <hr class="mini">
-                    <p>Although our focus remains on India, Baer Capital was born with a vision for the world. We currently have offices in Dubai, New Delhi, and Zurich. Contact us below.</p>
+                    <p>Alok is a Founder and was the President of Baer Capital Partners. He currently is the CFO at SoftBank Group International and serves as a Senior Advisor and Director on the Board of Baer Capital Partners.  Alok currently serves on the board of Vatika Limited. </p>
+                </div>
+                <div class="meta col-md-4 textpadding dark-grey-dk wow fadeInRight" data-wow-delay="0.4s">
+                    <h3>Background</h3>
+                    <hr class="mini">
+                    <p>Alok has 30 years of investment banking, capital markets and investment experience in New York, Hong Kong, Mumbai and London. Previously, Alok was a Managing Director at Morgan Stanley where he played a key role in establishing and growing Morgan Stanley's investment banking presence in India. Alok has an extensive network of CEO and promoter relationships in India. Alok has an MBA with Distinction from The Wharton School, University of Pennsylvania and a BA in Mathematics from St. Stephen's College, Delhi University. He has also been Chairman of the London Westminster Chapter of the Young Presidents’ Organization (YPO).</p>
                 </div>
             </div>
         </section>
 
         <!-- ============================ Section End ============================== -->
 
-        <!-- =============================== Footer ================================ -->
+        <!-- ============================ Footer ============================ -->
 
         <footer class="padding">
             <div class="container">
@@ -330,20 +259,14 @@ document.body.addEventListener("touchmove", tblock, true);
     <script src="js/wow.min.js"></script><!-- WoW animations -->
     <script src="js/jquery.nav.js"></script><!-- Left-hand bullet navigation -->
     <script src="js/jquery.nicescroll.min.js"></script><!-- Scrollbars for whole page and main navigation -->
-    <script src="js/owl.carousel.min.js"></script><!-- Owl carousel/slider -->
-    <script src="includes/jqBootstrapValidation.js"></script><!-- Form Validation for contact form -->
+    <script src="js/jquery.fitvids.js"></script><!-- Fitvids plugin, (responsive videos) -->
     <script src="js/jquery.easing.min.js"></script><!-- Easing plugin, for opacity fade on menu background images -->
-    <script src="includes/contact-form/contact_me.js"></script><!-- Contact form js -->
     <script src="js/scripts.js"></script><!-- Custom JS functions - always load last -->
-
-    <!-- Page-specific JS functions - these are functions that only occur on this specific page, so we DON'T want these placed our scripts.js file as this file is loaded on every page for global site functions.  -->
-
-  
 
     <!-- ========== Insert your Google Analytics code below this line ========== -->
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*newDate();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
