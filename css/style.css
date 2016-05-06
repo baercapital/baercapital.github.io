@@ -4621,8 +4621,8 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
 /* CSS for Profiles */
 
 .cropcircle{
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 66%;
   background: #eee no-repeat center;
   background-size: cover;
