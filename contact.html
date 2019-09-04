@@ -99,23 +99,7 @@ document.body.addEventListener("touchmove", tblock, true);
                 icon: image
             });
 
-            var marker_delhi = new google.maps.Marker({
-                position: new google.maps.LatLng(28.482988, 77.107089),
-                clickable: false,
-                title: "Our Delhi Location",
-                icon: image
-            })
-
-            var marker_zurich = new google.maps.Marker({
-                position: new google.maps.LatLng(47.361815, 8.548140),
-                clickable: false,
-                title: "Our Zurich Location",
-                icon: image
-            })
-
             marker_dubai.setMap(map);
-            marker_delhi.setMap(map);
-            marker_zurich.setMap(map);
 
             var styles = [{
                 stylers: [{
@@ -193,6 +177,7 @@ document.body.addEventListener("touchmove", tblock, true);
                 <div class="modal-footer">
                     <h3>Get in Touch</h3>
                     <h4>Baer Capital Partners, P.O. Box 506508, Dubai, UAE</h4>
+                    <small>A non-regulated holding company</small>
                 </div>
             </div>
         </div>
@@ -217,9 +202,6 @@ document.body.addEventListener("touchmove", tblock, true);
                 <div class="modal-body">
                     <h3>Contact Baer Capital Partners</h3>
                     <hr class="mini white central">
-                    <ul class="socialicons motion">
-                        <li class="four"><a href="mailto:info@baercapital.com?Subject=Contact%20from%20baercapital.com" title="Mail" class="mail" target="_blank"><span class="icon-mail"></span></a></li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -314,6 +296,7 @@ document.body.addEventListener("touchmove", tblock, true);
                     <div class="col-xs-12">
                         <a href="index.html" title="Baer Capital"><img src="img/f-logo.png" alt="Add alt tag"></a>
                         <p>Baer Capital Partners</p>
+                        <small>A non-regulated holding company</small>
                         <small>&copy; Copyright 2019 All rights reserved.</small>
                         <hr class="mini central light-grey-dk">
                     </div>
